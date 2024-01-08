@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="shortcut icon" href="/images/Site-favicon.ico">
+    <script defer src="/js/login.js"></script>
+    <title>LogIn</title>
+</head>
+
+<body>
+    <div id="__next">
+        <main class="main-container">
+            <nav class="navigation">
+
+                <a class="back-link" href="/home">Назад</a>
+            </nav>
+            <div class="auth-layout">
+                <div class="auth-header">
+                    <h1 class="auth-title">С возвращением!</h1>
+
+                    <span class="auth-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347.53 482.96" width="30" height="30">
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <path fill="#fa005a" class="cls-1"
+                                        d="M333.42,235.8,100.08,2.54a8.62,8.62,0,0,0-14.71,6.1V204.77L14.71,134.15A8.62,8.62,0,0,0,0,140.25V342.79a48.06,48.06,0,0,0,14.12,34.07l91.95,92A48.3,48.3,0,0,0,140.16,483h67.27a48.24,48.24,0,0,0,34.08-14.12l91.93-92a48.16,48.16,0,0,0,14.09-34.07V269.9A48.2,48.2,0,0,0,333.42,235.8Z">
+                                    </path>
+                                    <path fill="#ffc500" class="cls-2"
+                                        d="M262.24,321.11a14.44,14.44,0,0,1-4.21,10.2l-74.12,74.44a14.46,14.46,0,0,1-20.51,0L89.52,331.31a14.4,14.4,0,0,1-4.23-10.17V292.82a14.43,14.43,0,0,1,4.25-10.21l26.6-26.6a14.45,14.45,0,0,1,20.46,0l37.2,37.21L210.94,256a14.45,14.45,0,0,1,20.46,0l26.6,26.6a14.42,14.42,0,0,1,4.24,10.21Z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+                <div class="auth-content">
+                    <div class="form-wrapper">
+                        <form method="POST" id="send-form" action="http://127.0.0.1:2323/home" class="login-form">
+                            <section class="login-section multiple-section">
+                                <input type="hidden" value="password" name="method" id="method">
+                                <h3 class="section-title">Войти или зарегистрироваться</h3>
+                                <div class="input-wrapper">
+                                    <div class="input-field">
+
+                                        <input type="text" name="NickName" node_type="input" id="login" class="field"
+                                            value="" placeholder="Логин" autocomplete="username">
+
+                                    </div>
+                                </div>
+                                <div class="password-wrapper">
+                                    <div class="password-field">
+
+                                        <input type="password" name="Password" node_type="input" id="password"
+                                            class="field" value="" placeholder="Пароль" autocomplete="current-password">
+                                    </div>
+                                </div>
+                                <div class="button-wrapper">
+                                    <button class="submit-button" type="submit" id="adminEnterButton"
+                                        >Войти</button>
+                                        
+                                </div>
+                                
+                            </section>
+                            <div id="resultMessage"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

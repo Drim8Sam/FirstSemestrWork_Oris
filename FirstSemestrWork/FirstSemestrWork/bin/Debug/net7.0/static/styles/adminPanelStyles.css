@@ -1,0 +1,104 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.body{
+    color: rgb(245, 243, 245);
+
+}
+
+header {
+    background-color:rgb(40, 0, 51);
+    margin-top: 10px;
+    border-radius: 10px 10px 0 0;
+    max-width: 800px;
+    display: block;
+    padding: 20px;
+    color: #fff;
+    justify-items: center;
+    position: relative;
+    text-align: center;
+    font-family: Roboto, sans-serif
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blocks{
+    display: flex;
+    justify-content:space-around;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-family: Roboto, sans-serif
+}
+
+input {
+    font-family: Roboto, sans-serif;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 7px;
+    border: 0;
+    font-size: 16px;
+    background: rgb(242, 242, 242)
+}
+
+.namePersonage{
+    margin-bottom: 8px;
+}
+
+#deleteCharacterName {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+}
+
+button {
+    background-color:  rgb(204, 1, 171);
+    color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.character-block {
+    width: 400px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.character-block h2 {
+    margin-bottom: 8px;
+}
+
+.delete-button {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    background-color: #ff5858;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.character-list {
+    margin-top: 20px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель</title>
+    <link rel="shortcut icon" href="/images/Site-favicon.ico">
+    <script defer src="/js/adminAction.js"></script>
+    <link rel="stylesheet" href="/styles/adminPanelStyles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Админ-панель</h1>
+        </header>
+        <div class="blocks">
+            <div class="character-block">
+                <h2>Добавление персонажа</h2>
+                <form id="addCharacterForm">
+                    <label for="characterName">Имя персонажа:</label>
+                    <input type="text" id="characterName" name="characterName" required>
+                    <label for="characterImagePath">Путь до фотографии персонажа:</label>
+                    <input type="text" id="characterImagePath" name="characterImagePath" required>
+    
+                    <button type="button" onclick="addCharacter()">Добавить персонажа</button>
+                </form>
+            </div>
+    
+            <div class="character-block">
+                <h2>Удаление персонажа</h2>
+                <label for="deleteCharacterName" class="namePersonage">Имя персонажа:</label>
+                <input type="text" id="deleteCharacterName" name="deleteCharacterName" required>
+                <button type="button" class="delete-button" onclick="deleteCharacter()">Удалить персонажа</button>
+            </div>
+        </div>
+
+        <div class="character-list">
+            <h2>Существующие персонажи</h2>
+            <ul id="Active_personage">
+                
+            </ul>
+        </div>
+
+        <button type="button" onclick="goToHomePage()">На главную страницу</button>
+    </main>
+</body>
+</html>
